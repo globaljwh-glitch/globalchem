@@ -1,0 +1,98 @@
+/* Container grid for images */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Make all thumbs same size, show full image */
+.gallery img {
+  width: 100%;
+  object-fit: contain;  /* Show full image without cropping */
+  background-color: #f4f4f4;
+  padding: 0px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.galleryThumb {
+  position: relative;
+}
+.gallery .galleryThumb::after {
+    content: 'View Image';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.gallery .galleryThumb:hover::after {
+    opacity: 1;
+}
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 90%;
+  border-radius: 6px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  padding: 0 16px;
+}
+
+.nav.prev {
+  left: 10px;
+}
+
+.nav.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

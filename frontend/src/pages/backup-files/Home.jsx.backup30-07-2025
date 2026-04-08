@@ -1,0 +1,563 @@
+// src/pages/Home.jsx
+import Layout from '../components/Layout';
+import Homepage from '../components/Homepage';
+
+
+function Home() {
+  return (
+    <Layout>
+      <section className="mainBanner positionRelative">
+         <div className="container positionRelative">
+            <div className="bannerContent text-white">
+               <p className="bannerSmallHeading">GLOBAL SOURCING & LOCAL SUPPLY</p>
+               <h1 className="text-white"><span>Highest Quality Products </span> <br/>from Physically Audited & Validated Plants</h1>
+                  <p className="text-white">ISO9001, 14001, BRC, FSSC22000  Including cGMP & HARPC (Formerly HACCP), Kosher & Halal Certified in Compliance with Global and Country-Specific Standards, State of the Art Manufacturing Facilities On All Five Continets of the Globe</p>
+                  <a href="#" className="customBtn01">Learn More</a>
+            </div>
+         </div>
+      
+         <div className="mainBannerBlockSlider">
+            <div className="mainBannerBlockSlide positionRelative">
+               <div className="bannerImage">
+
+                  <div className="bannerThumb"><div className="bannerOverlay"></div><img src="images/banner/banner-slider-01.jpg" alt="" className="imgResponsive"/></div>
+               </div>
+            </div>
+            <div className="mainBannerBlockSlide positionRelative">
+               <div className="bannerImage">
+                  <div className="bannerThumb"><div className="bannerOverlay"></div><img src="images/banner/banner-slider-02.jpg" alt="" className="imgResponsive"/></div>
+               </div>
+            </div>
+            <div className="mainBannerBlockSlide positionRelative">
+               <div className="bannerImage">
+                  <div className="bannerThumb"><div className="bannerOverlay"></div><img src="images/banner/banner-slider-03.jpg" alt="" className="imgResponsive"/></div>
+               </div>
+            </div>
+            <div className="mainBannerBlockSlide positionRelative">
+               <div className="bannerImage">
+                  <div className="bannerThumb"><div className="bannerOverlay"></div><img src="images/banner/banner-slider-04.jpg" alt="" className="imgResponsive"/></div>
+               </div>
+            </div>
+            <div className="mainBannerBlockSlide positionRelative">
+               <div className="bannerImage">
+                  <div className="bannerThumb"><div className="bannerOverlay"></div><img src="images/banner/banner-slider-05.jpg" alt="" className="imgResponsive"/></div>
+               </div>
+            </div>
+         </div>
+         <div className="mainBannerSliderPagination"></div>
+      </section>
+      <section className="contentContainer greyBg homeContentContainer homeQuickLinksnavBlock">
+         <div className="container positionRelative">
+            <div className="homeQucikLinkOuter">
+            <div className="row seven-cols">
+               <div className="col-md-4">
+                  <a href="/sourcing-partner" className="homeQuickLinksnav">
+                     <div className="iconQuickLink">
+                        <span><img src="images/icons/supply-partner-icon.png" alt=""/></span>
+                        <span className="hoverIcon"><img src="images/icons/supply-partner-icon-white.png" alt=""/></span>
+                     </div>
+                     <h4>Supply Partner</h4>
+                     <p>With a dedicated team of Sourcing at GCC who follow a rigorous supplier...</p>
+                  </a>
+               </div>
+               <div className="col-md-4">
+                  <a href="/customer-focused" className="homeQuickLinksnav">
+                     <div className="iconQuickLink">
+                        <span><img src="images/icons/customer-centric-icon.png" alt=""/></span>
+                        <span className="hoverIcon"><img src="images/icons/customer-centric-icon-white.png" alt=""/></span>
+                     </div>
+                     <h4>Customer-centric</h4>
+                     <p>GCC has the ability to offer customers lower priced options to branded equivalents...</p>
+                  </a>
+               </div>
+               <div className="col-md-4">
+                  <a href="/industries" className="homeQuickLinksnav">
+                     <div className="iconQuickLink">
+                        <span><img src="images/icons/market-serve-icon.png" alt=""/></span>
+                        <span className="hoverIcon"><img src="images/icons/market-served-icon-white.png" alt=""/></span>
+                     </div>
+                     <h4>Markets Served</h4>
+                     <p>GCC’s team of industry experts delivers a comprehensive range of products...</p>
+                  </a>
+               </div>
+               <div className="col-md-4">
+                  <a href="/quality-care" className="homeQuickLinksnav">
+                     <div className="iconQuickLink">
+                        <span><img src="images/icons/quality-safety-icon.png" alt=""/></span>
+                        <span className="hoverIcon"><img src="images/icons/quality-safety-icon-white.png" alt=""/></span>
+                     </div>
+                     <h4>Quality and Safety</h4>
+                     <p>GCC is proud of its facilities, processes, capabilities and services that...</p>
+                  </a>
+               </div>
+               <div className="col-md-4">
+                  <a href="/global-network" className="homeQuickLinksnav">
+                     <div className="iconQuickLink">
+                        <span><img src="images/icons/distribution-channel-icon.png" alt=""/></span>
+                        <span className="hoverIcon"><img src="images/icons/distribution-channel-icon-white.png" alt=""/></span>
+                     </div>
+                     <h4>Distribution Channels</h4>
+                     <p>We bring the world’s supply of specialty ingredients to your doorstep...</p>
+                  </a>
+               </div>
+               <div className="col-md-4">
+                  <a href="/custom-rd" className="homeQuickLinksnav">
+                     <div className="iconQuickLink">
+                        <span><img src="images/icons/contract-rd-icon.png" alt=""/></span>
+                        <span className="hoverIcon"><img src="images/icons/contract-rd-icon-white.png" alt=""/></span>
+                     </div>
+                     <h4>Contract R&amp;D</h4>
+                     <p>Contract R&D is the initial stage in an industry that allows you to research...</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <section className="contentContainer imgBgOne homeContentContainer positionRelative">
+         <div className="container">
+            <div className="row">
+               <div className="col-lg-6 col-md-6 positionRelative">
+                  <div className="aboutThumbImage positionRelative">
+                     <img src="images/about-home-image.jpg" alt="" className=""/>
+                     <div className="experienceBlock blueBg text-center">
+                        <div className="iconExp mb-3"><img src="images/icons/years-exp-icon.png" alt=""/></div>
+                        <div>15+ Years Experience</div>
+                     </div>
+                  </div>
+               </div>
+               <div className="col-lg-6 col-md-6 positionRelative">
+                  <div className="aboutHomeContent">
+                     <h6 className="smallHead">Welcome to GCC</h6>
+                     <h1>Great Experience for Ingredients and Chemicals</h1>
+                     <p>Global Chemicals Corporation (GCC) is a leading provider of high quality natural and synthetic ingredients and specialty chemicals. With a strong legacy of innovation and excellence, we have become a trusted global partner in industries such as food and beverage, cosmetic and personal care, pharmaceuticals, and industrial cleaning. </p>
+                     <div className="accordion" id="accordionAboutContent">
+                        <div className="accordion-item">
+                           <div className="accordion-header" id="headingOne">
+                              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              INNOVATION DRIVEN
+                              </button>
+                           </div>
+                           <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionAboutContent">
+                              <div className="accordion-body">
+                                 <p>At GCC, innovation drives our culture and operations. Our R&D Centers and Quality Control Labs in East Brunswick, New Jersey; Shanghai, China; and Ahmedabad, India reflect our commitment to emerging technologies. Backed by expert scientists and technical staff, we lead in Chemical, Cosmetic, Food, Nutrition, and Pharmaceutical industries. Our R&D investments and QA/QC labs ensure accurate validation of manufacturing partners' Certificates of Analysis. We strictly adhere to ISO 9001, ISO 14000, BRC, FSSC 22000, cGMP, and HACCP standards, following responsible care principles and full compliance with FDA, USDA, EPA, and all relevant regulations.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div className="accordion-item">
+                           <div className="accordion-header" id="headingTwo">
+                              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              DEVELOPING COLLABORATIONS
+                              </button>
+                           </div>
+                           <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionAboutContent">
+                              <div className="accordion-body">
+                                 <p>Beyond our BTS facilities, GCC fosters strategic partnerships with trusted global manufacturers to drive innovation and market expansion. Our business development teams provide both technical and commercial expertise, helping partners expand product lines and introduce new technologies. At GCC, we are committed to forming synergistic partnerships with our manufacturing partners and clients to enhance and strengthen their supply chains, improve cost efficiency, increase product profitability, and secure a competitive edge in both global and local markets. GCC delivers long-term, high-quality solutions for sustained success.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div className="accordion-item">
+                           <div className="accordion-header" id="headingThree">
+                              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              CUSTOM-BUILT FACTORIES
+                              </button>
+                           </div>
+                           <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionAboutContent">
+                              <div className="accordion-body">
+                                 <p>GCC has been forming long-term contractual partnerships with reputable builders in strategically located areas around the world to develop built-to-suit (BTS) facilities for manufacturing. A BTS facility is a custom-designed building created to meet the specific needs of a single tenant. In a BTS arrangement, the tenant collaborates with the developer or landowner to construct a new facility from the ground up, incorporating the tenant’s operational, spatial, and technological requirements into the design. Upon completion, the tenant leases the facility for a fixed term, typically ranging from 7 to 10 years, with options for renewal.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div className="accordion-item">
+                           <div className="accordion-header" id="headingFour">
+                              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                              CUSTOMER-CENTRIC APPROACH
+                              </button>
+                           </div>
+                           <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionAboutContent">
+                              <div className="accordion-body">
+                                 <p>In our company culture, the customer is at the heart of everything we do. Our teams across R&D, Production, QA/QC, Customer Service, Logistics, and Distribution are all aligned with the needs of our customers. GCC’s foundation was built with the customer as our primary focus. We take a hands-on approach to deliver accurate, timely, and dependable service to all our clients. Our customer service team goes beyond being an operational extension—they act as advocates and strategic partners for each customer. As key stakeholders, they are dedicated to ensuring that every order is managed with professionalism and precision.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="/products" className="customBtn01">Our Products </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section className="contentContainer homeContentContainer industriesServed positionRelative">
+         <div className="container">
+            <div className="row">
+               <div className="col-lg-12 text-center">
+                  <h6 className="smallHead">Our Products</h6>
+                  <h1 className="text-center">Our Products</h1>
+                  <p className="highlighted text-center paddingLR150">GCC offers over 4000 different natural ingredients and chemicals sourced throughout the globe for a variety of industries. Our products meet the highest standards of quality and performance. </p>
+               </div>
+            </div>
+            {/* <div className="row">
+               <div className="col-lg-12">
+                  <div className="productTable"> 
+                     <table className="table table-striped text-start">
+                       <thead>
+                         <tr>
+                           <th scope="col">CHEMICAL NAME</th>
+                           <th scope="col">PRODUCT CODE</th>
+                           <th scope="col">BRAND NAME</th>
+                           <th scope="col">CAS NUMBER</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>2-Hydroxyisobutyric Acid</td>
+                           <td>103900</td>
+                           <td>GCC</td>
+                           <td>594-61-6</td>
+                         </tr>
+                         <tr>
+                           <td>3,4,4'-Trichlorocarbanilide</td>
+                           <td>103901</td>
+                           <td>GCC</td>
+                           <td>101-20-2</td>
+                         </tr>
+                         <tr>
+                           <td><a href="#">1-(2-CARBOXYLATOETHYL)-4,5-DIHYDRO-3-(2-HYDROXYETHYL)-2-ISOHEPTADECYL-1H-IMIDAZOLIUM</a></td>
+                           <td>100004</td>
+                           <td>GCC</td>
+                           <td>68630-96-6</td>
+                         </tr>
+                         <tr>
+                           <td><a href="#">1-(CIS-3-CHLOROALLYL)-3,5,7-TRIAZA-1-AZONIA-ADAMANTANE CHLORIDE</a></td>
+                           <td>100010</td>
+                           <td>GCC</td>
+                           <td>51229-78-8</td>
+                         </tr>
+                         <tr>
+                           <td><a href="#">1-HYDROXYETHYLIDENE-1, 1-DIPHOSPHONIC ACID (AND) PHOSPHONIC ACID</a></td>
+                           <td>100011</td>
+                           <td>GCC</td>
+                           <td>2809-21-4</td>
+                         </tr>
+                       </tbody>
+                     </table>
+                     <div className="text-center"><a href="/products" className="customBtn01">View All Products</a></div>
+                  </div>
+               </div>
+            </div> */}
+            <Homepage/>
+         </div>
+      </section>
+      <section className="contentContainer imgBgTwo homeContentContainer industriesServed positionRelative">
+         <div className="container">
+            <div className="row">
+               <div className="col-lg-4 pe-5">
+                  <h6 className="smallHead">Our Product Line</h6>
+                  <h1>Industries We Served</h1>
+                  <p>Global Chemicals Corporation(GCC) was founded to offer value-added services for our product lines, including both synthetic and natural ingredients for the Food and Beverage, Cosmetic and Personal Care, Nutritional, and Pharmaceutical industries. Since its inception, GCC has grown into a leading supplier of raw materials and ingredients across various industries. With more than 4,000 products and global partnerships with the world’s top ingredient manufacturers, GCC is your ideal supplier.</p>
+                  <a href="/industries" className="customBtn01 blueBg">View All Industries</a>
+               </div>
+               
+                  <div className="categoriesSectionHome">
+                     <div className="row">
+                        <div className="col categoriesCol-01">
+                           <div className="flip-box block01">
+                              <a href="/industries/personal-care-cosmetic" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/01.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Personal Care / Cosmetic</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block02">
+                              <a href="/industries/sport-nutrition" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/02.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Nutritional / Dietary Supplements</h4>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <div className="col categoriesCol-02">
+                           <div className="flip-box block03">
+                              <a href="/industries/flavor-and-fragrance" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/03.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Flavor &amp; Frangrance</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block04">
+                              <a href="/industries/industrial" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/04.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Industrial</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block05">
+                              <a href="/industries/animal-health-nutrition" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/05.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Animal Health &amp; Nutrition</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block06">
+                              <a href="/industries/pharmaceutical" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/06.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Pharmaceuticals</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block05 visblityHidden">
+                              <a href="/industries" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/hhhhh.png" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">View More</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block06 m-none">
+                              <a href="/industries/flavor-and-fragrance" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/07.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Flavor &amp; Frangrance</h4>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <div className="col categoriesCol-03">
+                            <div className="flip-box block08 d-inline-block">
+                              <a href="/industries/sport-nutrition" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/08.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Sport Nutrition</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block03 d-inline-block visblityHidden">
+                              <a href="/industries" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/hhhhh.png" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">View More</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block09 d-inline-block">
+                              <a href="/industries/food-and-beverages" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/09.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Food &amp; Beverages</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block10 d-inline-block">
+                              <a href="/industries/pharmaceutical" className="flip-box-inner">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/10.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">Pharmaceuticals</h4>
+                                 </div>
+                              </a>
+                           </div>
+                           <div className="flip-box block11 d-inline-block">
+                              <a href="/industries" className="flip-box-inner-no">
+                                 <div className="flip-box-front">
+                                   <img src="images/new/11.jpg" alt="" className="imgResponsive"/>
+                                 </div>
+                                 <div className="flip-box-back">
+                                   <h4 className="categoriesName">View More</h4>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </section>
+      <section className="contentContainer homeContentContainer partnerBlockBg positionRelative">
+         <div className="container">
+            <div className="row">
+               <div className="col-lg-12 text-center">
+                  <h6 className="smallHead">Our Partners</h6>
+                  <h1 className="text-center">Manufacturing Partners</h1>
+                  <p className="highlighted text-center paddingLR200">We represent leading global producers of chemicals, natural & synthetic ingredients, specialty & performance materials .</p>
+               </div>
+            </div>
+            <div className="row">
+               <div className="col-lg-12 col-md-12">
+                  <div className="marquee">
+                     <div className="marquee_group">
+                        <div className="marquee-content d-flex">
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/1-Precheza-1-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/2-Petro-Canada-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/3-Salicylates-Chemicals-1-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/4-PMC-Crystal-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/5-SKC-Korea-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/6-ACIDCHEM-USA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/7-AJAY-NORTH-AMERICA-LLC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/8-AJINOMOTO-NORTH-AMERICA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/9-ARCHER-DANIELS-MIDLAND-ADM-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/10-ASHTA-CHEMICALS-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/11-AVANTOR-FORMERLY-MALLINCKRODT-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/12-CABB-NORTH-AMERICA-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/13-COLONIAL-CHEMICAL-SOLUTIONS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/14-DOMINO-SPECIALITY-INGREDIANTS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/15-DSM-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/16-EMERALD-KALAMA-CHEMICAL-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/17-EMERY-OLEOCHEMICALS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/18-ESSECO-USA-LLC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/19-EVONIK-CORPORATION-1-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/20-GADOT-BIO-CHEM-USA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/21-GENERAL-CHEMICAL-PERFORMANCE-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/22-GILES-CHEMICAL-CORP.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/23-GRAIN-PROCESSING-CORP-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/24-HAIFA-NORTH-AMERICA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/25-HANGZHOU-DAKANG-CHEMICALS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/26-HOLLAND-CO.-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/27-HONEYWELL-SPECIALTY-CHEMICALS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/28-ICOF-America-Inc-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/29-INOLEX-CHEMICAL-COMPANY-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/30-JIANGUS-RUIJIA-CHEMISTRY-CO-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/31-JOST-CHEMICAL-CO.-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/32-JUNGBUNZLAUER-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/33-KIRSCH-PHARMA-GMBH-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/34-LONZA-FORMLY-ARCH-CHEMICALS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/35-LUBRIZOL-ADVANCED-MTL-NOVEON-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/36-LUCAS-MEYER-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/37-NANTONG-ACETIC-ACID-CHEMICAL-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/38-NIACET-CORPORATION-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/39-NUTRINOVA-CELANESE-LTD-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/40-OLEON-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/41-PCS-SALES-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/42-PERDUE-FARMS-INCORPORATED-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/43-PHARMEXCIPIENT-BLANNVER-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/44-PMC-SPECIALTIES-GROUP-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/45-PURAC-AMERICA-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/46-R.T.-VANDERBILT-CO.-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/47-ROHA-USA-LLC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/48-ROQUETTE-AMERICA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/49-RTD-HALLSTAR-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/50-RTD-HALLSTAR-FKA-BIOCHEMICA-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/51-SCHOLLE-CORPORATION-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/52-SEPPIC-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/53-SETHNESS-PRODUCTS-CO.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/54-SHELL-CHEMICAL-LP-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/55-STEPAN-COMPANY-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/56-TATE-LYLE-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/57-TWIN-RIVERS-TECHNOLOGIES-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/58-US-GYPSUM-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/59-VANCE-BIOENERGY-SDN-BHD.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/60-VERTELLUS-CASCHEM-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/61-VVF-LLC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/62-Wuhan-Youji-Industrial-Company-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/63-Yixing-City-Shenguang-Medicine-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/64-ZETA-PHARMACEUTICALS-LLC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/65-ZHENJIANG-MAOYUAN-CHEMICAL-CO.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/66-ZOCHEM-INC-300x180.png" alt="" /></div>
+                        </div>
+                        <div className="marquee-content d-flex">
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/1-Precheza-1-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/2-Petro-Canada-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/3-Salicylates-Chemicals-1-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/4-PMC-Crystal-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/5-SKC-Korea-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/6-ACIDCHEM-USA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/7-AJAY-NORTH-AMERICA-LLC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/8-AJINOMOTO-NORTH-AMERICA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/9-ARCHER-DANIELS-MIDLAND-ADM-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/10-ASHTA-CHEMICALS-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/11-AVANTOR-FORMERLY-MALLINCKRODT-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/12-CABB-NORTH-AMERICA-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/13-COLONIAL-CHEMICAL-SOLUTIONS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/14-DOMINO-SPECIALITY-INGREDIANTS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/15-DSM-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/16-EMERALD-KALAMA-CHEMICAL-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/17-EMERY-OLEOCHEMICALS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/18-ESSECO-USA-LLC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/19-EVONIK-CORPORATION-1-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/20-GADOT-BIO-CHEM-USA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/21-GENERAL-CHEMICAL-PERFORMANCE-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/22-GILES-CHEMICAL-CORP.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/23-GRAIN-PROCESSING-CORP-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/24-HAIFA-NORTH-AMERICA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/25-HANGZHOU-DAKANG-CHEMICALS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/26-HOLLAND-CO.-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/27-HONEYWELL-SPECIALTY-CHEMICALS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/28-ICOF-America-Inc-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/29-INOLEX-CHEMICAL-COMPANY-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/30-JIANGUS-RUIJIA-CHEMISTRY-CO-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/31-JOST-CHEMICAL-CO.-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/32-JUNGBUNZLAUER-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/33-KIRSCH-PHARMA-GMBH-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/34-LONZA-FORMLY-ARCH-CHEMICALS-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/35-LUBRIZOL-ADVANCED-MTL-NOVEON-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/36-LUCAS-MEYER-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/37-NANTONG-ACETIC-ACID-CHEMICAL-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/38-NIACET-CORPORATION-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/39-NUTRINOVA-CELANESE-LTD-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/40-OLEON-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/41-PCS-SALES-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/42-PERDUE-FARMS-INCORPORATED-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/43-PHARMEXCIPIENT-BLANNVER-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/44-PMC-SPECIALTIES-GROUP-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/45-PURAC-AMERICA-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/46-R.T.-VANDERBILT-CO.-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/47-ROHA-USA-LLC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/48-ROQUETTE-AMERICA-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/49-RTD-HALLSTAR-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/50-RTD-HALLSTAR-FKA-BIOCHEMICA-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/51-SCHOLLE-CORPORATION-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/52-SEPPIC-INC.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/53-SETHNESS-PRODUCTS-CO.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/54-SHELL-CHEMICAL-LP-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/55-STEPAN-COMPANY-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/56-TATE-LYLE-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/57-TWIN-RIVERS-TECHNOLOGIES-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/58-US-GYPSUM-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/59-VANCE-BIOENERGY-SDN-BHD.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/60-VERTELLUS-CASCHEM-INC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/61-VVF-LLC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/62-Wuhan-Youji-Industrial-Company-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/63-Yixing-City-Shenguang-Medicine-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/64-ZETA-PHARMACEUTICALS-LLC-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/65-ZHENJIANG-MAOYUAN-CHEMICAL-CO.-300x180.png" alt="" /></div>
+                           <div className="ourPatnersBlockSlide"><img src="images/partners-logo/66-ZOCHEM-INC-300x180.png" alt="" /></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    </Layout>
+  );
+}
+
+export default Home;

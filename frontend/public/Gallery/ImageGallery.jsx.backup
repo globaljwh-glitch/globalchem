@@ -1,0 +1,60 @@
+import React, { useState } from 'react';
+import './ImageGallery.css';
+
+const images = [
+  'https://via.placeholder.com/600x400?text=Image+1',
+  'https://via.placeholder.com/600x400?text=Image+2',
+  'https://via.placeholder.com/600x400?text=Image+3',
+  'https://via.placeholder.com/600x400?text=Image+4'
+];
+
+const ImageGallery = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openModal = (index) => {
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => setIsOpen(false);
+
+  const nextImage = () => {
+    setCurrentIndex((currentIndex + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+  };
+
+  return (
+    <>
+      <div className="gallery">
+        {images.map((src, i) => (
+          <img
+            key={i}
+            src={src}
+            alt={`Image ${i + 1}`}
+            onClick={() => openModal(i)}
+          />
+        ))}
+      </div>
+
+      {isOpen && (
+        <div className="modal" onClick={closeModal}>
+          <span className="close" onClick={closeModal}>&times;</span>
+          <span className="nav prev" onClick={(e) => { e.stopPropagation(); prevImage(); }}>&#10094;</span>
+          <img
+            src={images[currentIndex]}
+            alt="Modal View"
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <span className="nav next" onClick={(e) => { e.stopPropagation(); nextImage(); }}>&#10095;</span>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default ImageGallery;

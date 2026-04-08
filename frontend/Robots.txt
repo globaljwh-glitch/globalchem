@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+ 
+Sitemap: https://globalchemicalscorp.com/sitemap.xml

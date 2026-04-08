@@ -1,0 +1,146 @@
+import React, { useEffect, useState } from 'react';
+
+import { Link } from 'react-router-dom';
+import axios from '../Axios';
+
+
+function ProductList({ children }) {
+  const [products, setProducts] = useState([]);
+  const [pagination, setPagination] = useState({});
+  const [page, setPage] = useState(1);
+  const [search, setSearch] = useState('');
+
+
+
+  const pageGroupSize = 4;
+  const currentGroup = Math.ceil(page / pageGroupSize);
+  const startPage = (currentGroup - 1) * pageGroupSize + 1;
+  const endPage = Math.min(startPage + pageGroupSize - 1, pagination.last_page);
+
+
+
+  const fetchProducts = async (page, search) => {
+
+
+    const res = await axios.get(`/api/products`, {
+
+
+      params: {
+        page,
+        search,
+      },
+      withCredentials: true,
+    });
+    setProducts(res.data.data);
+    setPagination({
+      current_page: res.data.current_page,
+      last_page: res.data.last_page,
+    });
+  };
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+    setPage(1); 
+  };
+
+
+  useEffect(() => {
+    fetchProducts(page, search);
+  }, [page, search]);
+  return (
+    <>
+      <section className="contentContainer industriesServed positionRelative">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <h6 className="smallHead">Our Products</h6>
+              <h1>Our Products</h1>
+              <div className="productTable">
+                <div className="searchProduct d-flex">
+                  <div className="searchSite d-flex ms-auto">
+                    <label className="screen-reader-text" htmlFor="searchProduct"></label>
+                    <input type="text" value={search} onChange={handleSearch} className="search-field" name="searchProduct" id="searchProduct" placeholder="Seach..." autoComplete="off" />
+                    <button id="searchsubmit" className="search-submit" ><i className="fa-solid fa-search"></i></button>
+                  </div>
+                </div>
+                <table className="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">CHEMICAL NAME</th>
+                      <th scope="col">PRODUCT CODE</th>
+                      <th scope="col">BRAND NAME</th>
+                      <th scope="col">CAS NUMBER</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {products.map((p) => (
+                      <tr key={p.id}>
+                        <td >
+                          <Link to={`/products/${p.slug}`}> {p.chemical_name} </Link>
+                        </td>
+                        <td>{p.product_code}</td>
+                        <td>{p.brand_name}</td>
+                        <td>{p.cas_number}</td>
+                      </tr>
+                    ))}
+
+                  </tbody>
+                </table>
+                <div className="paginationBlock">
+                  <div style={{ marginTop: '20px' }}>
+                    <ul className="pagination justify-content-end mb-0">
+                     
+                      <li className={`page-item ${page === 1 ? 'disabled' : ''}`}>
+                        <button className="page-link" onClick={() => setPage(1)}>
+                          &laquo;
+                        </button>
+                      </li>
+
+                      
+                      <li className={`page-item ${page === 1 ? 'disabled' : ''}`}>
+                        <button className="page-link" onClick={() => setPage(prev => Math.max(1, prev - 1))}>
+                          &lsaquo;
+                        </button>
+                      </li>
+
+                      
+                      {Array.from({ length: 5 }, (_, i) => {
+                        const pageNumber = page - 2 + i;
+                        if (pageNumber >= 1 && pageNumber <= pagination.last_page) {
+                          return (
+                            <li className={`page-item ${pageNumber === page ? 'active' : ''}`} key={pageNumber}>
+                              <button className="page-link" onClick={() => setPage(pageNumber)}>
+                                {pageNumber}
+                              </button>
+                            </li>
+                          );
+                        }
+                        return null;
+                      })}
+
+                 
+                      <li className={`page-item ${page === pagination.last_page ? 'disabled' : ''}`}>
+                        <button className="page-link" onClick={() => setPage(prev => Math.min(pagination.last_page, prev + 1))}>
+                          &rsaquo;
+                        </button>
+                      </li>
+
+                  
+                      <li className={`page-item ${page === pagination.last_page ? 'disabled' : ''}`}>
+                        <button className="page-link" onClick={() => setPage(pagination.last_page)}>
+                          &raquo;
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default ProductList;

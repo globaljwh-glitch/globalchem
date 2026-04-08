@@ -1,0 +1,76 @@
+// App.jsx or inside your route page
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import About from './pages/About';
+import Certifications from './pages/Certifications';
+import CodeOfConduct from './pages/CodeOfConduct';
+import Industries from './pages/Industries';
+import Products from './pages/Products';
+import PersonalCareCosmetic from './pages/PersonalCareCosmetic';
+import FoodAndBeverages from './pages/FoodAndBeverages';
+import Pharmaceutical from './pages/Pharmaceutical';
+import FlavorAndFragrance from './pages/FlavorAndFragrance';
+import AnimalHealthAndNutrition from './pages/AnimalHealthAndNutrition';
+import SportNutrition from './pages/SportNutrition';
+
+import Industrial from './pages/Industrial';
+import Manufacturing from './pages/Manufacturing';
+import Services from './pages/Services';
+import Partners from './pages/Partners';
+import Careers from './pages/Careers';
+import Events from './pages/Events';
+import News from './pages/News';
+import Samples from './pages/Samples';
+import QualityControl from './pages/QualityControl';
+import RegulatoryAffairs from './pages/RegulatoryAffairs';
+import QualityCare from './pages/QualityCare';
+
+import QuoteRequest from './pages/QuoteRequest';
+import TechnicalSupportDocumentation from './pages/TechnicalSupportDocumentation';
+import ProductDetail from './components/ProductDetail';
+
+
+function App() {
+  return (
+    <Router>
+      
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/code-of-conduct" element={<CodeOfConduct />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:slug" element={<ProductDetail />} />
+
+          <Route path="/manufacturing" element={<Manufacturing />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/samples" element={<Samples />} />
+          <Route path="/quote-request" element={<QuoteRequest />} />
+          
+          <Route path="/quality-care" element={<QualityCare />} />
+          <Route path="/quality-care/technical-support-documentation/" element={<TechnicalSupportDocumentation />} />
+          <Route path="/quality-care/quality-control" element={<QualityControl />} />
+          <Route path="/quality-care/regulatory-affairs" element={<RegulatoryAffairs />} />
+
+          <Route path="/industries/personal-care-cosmetic" element={<PersonalCareCosmetic />} />
+          <Route path="/industries/food-and-beverages" element={<FoodAndBeverages />} />
+          <Route path="/industries/pharmaceutical" element={<Pharmaceutical />} />
+          <Route path="/industries/flavor-and-fragrance" element={<FlavorAndFragrance />} />
+          <Route path="/industries/animal-health-nutrition" element={<AnimalHealthAndNutrition />} />
+          <Route path="/industries/sport-nutrition" element={<SportNutrition />} />
+          <Route path="/industries/industrial" element={<Industrial />} />
+
+        </Routes>
+     
+    </Router>
+  );
+}
+
+export default App;
